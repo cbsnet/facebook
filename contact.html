@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CbsNet - Soluzioni Internet Versilia</title>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/default.css" media="screen">
+<!--[if IE 7]>
+        <link rel="stylesheet" type="text/css" href="css/ie7.css">
+<![endif]-->
+<!--[if IE 8]>
+        <link rel="stylesheet" type="text/css" href="css/ie8.css">
+<![endif]-->
+
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/cufon.js"></script>
+<script type="text/javascript" src="js/cufon_max.js"></script>
+<script type="text/javascript" src="js/3d_carousel.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$("#contact_form").validate({
+			rules: {
+				verification: {
+	  				required: true,
+	  				range: [5, 8]
+				}
+			}
+		});
+	});
+</script>
+
+<script type="text/javascript">
+	window.fbAsyncInit = function() {
+		FB.Canvas.setSize();
+	}
+
+	function sizeChangeCallback() {
+		FB.Canvas.setSize();
+	
+	setTimeout(function(){ FB.Canvas.setSize(size_obj) },300);
+	}
+</script>
+</head>
+
+<body class="no_slider" style="overflow:hidden;">
+
+<!-- ***** HEADER START ***** -->
+
+<div id="header">
+<div class="header_wrapper">    
+    <!-- main menu -->
+    <div id="navigation">
+        <ul class="nav">
+        <li class="current" title="Home-page"><a href="index.php"><span>Home</span></a></li>
+        <li title="Quello che ti offriamo"><a href="services.html"><span>Servizi</span></a></li>
+        <li title="Alcuni dei siti realizzati da CbsNet"><a href="portfolio.html"><span>Portfolio</span></a></li>
+        <li title="Contatta CbsNet"><a href="contact.html"><span class="signal">Contatti</span></a></li> 
+        </ul> 
+    </div>
+    <!-- end of main menu -->
+</div><!-- End of header_wrapper -->
+</div><!-- End of header -->
+
+<!-- ***** HEADER END ***** -->
+        
+<div class="clear"></div>
+
+<!-- ************ -->
+<!-- MAIN CONTENT -->
+<!-- ************ -->
+
+	<div class="main_content_wrapper contact_wr">
+    <div class="page_title"><h1>Contatti</h1></div>
+    <p>Hai bisogno di un sito internet professionale oppure vuoi semplicemente creare la tua area personalizzata su Facebook? Scrivici!</p>
+    
+    <!-- CONTACT FORM -->
+            <div id="cf_top"></div>
+            <div id="cf_main">
+            	<form action="contact.php" method="post" id="contact_form">
+                	<div class="input_wrapper">
+                		<div class="cf_label">Nome * :</div>
+                		<input class="required" type="text" id="name" name="name">
+                    </div>
+                    <div class="input_wrapper">
+                		<div class="cf_label">Email * :</div>
+                		<input type="text" id="cemail" name="email" class="required email">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="input_wrapper">
+                		<div class="cf_label">Cellulare :</div>
+                		<input class="phone" type="text" name="phone">
+                    </div>
+                    <div class="input_wrapper">
+                		<div class="cf_label">Sito internet :</div>
+                		<input class="website" type="text" name="website">
+                    </div>
+                    <div class="clear"></div>
+                    <div class="input_wrapper">
+                		<textarea name="message" id="message" rows="20" cols="20" class="required"></textarea>
+                    </div>
+                    <div class="input_wrapper">
+                		<div class="cf_label verification_label" style="float:left; padding:8px 10px 0 0;">Inserisci un numero tra 5 e 8 * :</div>
+                        <input type="text" class="verification" id="verification" name="verification">
+                    </div>
+                    
+                    <div class="clear"></div>
+                		<div><input type="submit" id="submit" class="button" value="Invia la richiesta"></div>
+                </form>
+            </div><!-- End of cf_main -->
+            <div id="cf_bottom"></div>
+            <!-- CONTACT FORM -->
+    
+    <div class="content_separator"></div>
+            <div class="location_box">
+            	<h4>Dove siamo</h4>
+                <p><strong>CbsNet - Soluzioni Internet</strong><br>
+              via Mignano 293 <br>
+              55047 Ripa - Seravezza (Lu)
+              <br>
+              Toscana - Italia</p>
+                <iframe width="475" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.it/maps?f=q&amp;source=s_q&amp;hl=it&amp;q=Via+Mignano,+293,+55047+Seravezza+Lucca,+Toscana&amp;aq=&amp;sll=41.442726,12.392578&amp;sspn=24.529797,56.90918&amp;ie=UTF8&amp;geocode=FUwinwIdVc6bAA&amp;split=0&amp;hq=&amp;hnear=Via+Mignano,+293,+55047+Seravezza+Lucca,+Toscana&amp;z=14&amp;ll=43.983436,10.210901&amp;output=embed"></iframe><br />
+            </div><!-- End of location_box --><!-- End of location_box -->
+    </div><!-- End of main_contetn_wrapper -->
+
+<!-- ******************* -->
+<!-- END OF MAIN CONTENT -->
+<!-- ******************* -->
+
+<div class="clear"></div>
+
+<!-- ****** -->
+<!-- FOOTER -->
+<!-- ****** -->
+<div class="footer_bg">
+	<div class="footer_wrapper"><!-- End of footer_box 2 --><!-- End of footer_box 3 -->
+    </div><!-- End of footer wrapper -->
+</div><!-- End of footer_bg -->
+<!-- ************* -->
+<!-- END OF FOOTER -->
+<!-- ************* -->
+
+<div id="fb-root"></div>
+<script src="http://connect.facebook.net/en_US/all.js"></script>
+<script>
+	FB.init({
+		appId : '191031284272174',
+		status : true, // check login status
+		cookie : true, // enable cookies to allow the server to access the session
+		xfbml : true // parse XFBML
+	});
+</script>
+</body>
+</html>
